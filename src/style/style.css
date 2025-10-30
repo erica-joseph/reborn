@@ -1,0 +1,165 @@
+
+/*Default*/
+.App {
+  text-align: center;
+}
+
+body{
+  width: 95%;
+  margin: 0 auto;                 
+  min-height: 100vh;   
+  display: block; 
+  list-style-type: none;
+}
+/*Customizations*/
+
+/*Containers*/
+.headerContainer{
+  display: flex;
+  align-items: center;
+  background-color: red;
+  width: 100%;
+  height: fit-content;
+  padding: 1vh;
+}
+.navbarContainer{
+  display:list-item;
+  background-color: blue;
+  width: 100%;
+  height: fit-content;
+  padding: 1vh;
+}
+.contentContainer{
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+  width: 100%;
+  padding: 1vh;
+}
+.bumperContainer{
+  background-color: yellow;
+  width: 100%;
+  height: 20vh;
+  padding: 1vh;
+}
+.rightsContainer{
+  background-color: rgb(0, 255, 225);
+  width: 100%;
+  height: 5vh;
+  padding: 1vh;
+}
+.logoContainer{
+  display: flex;
+  background-color: blueviolet;
+  width: 35vh;
+  height: 15vh;
+  padding: 1vh;
+  color: white;
+}
+
+/* Logo */
+.logoImage{
+  background-color: olive;
+  width: 20vh;
+  padding: 1vh;
+  margin: 1vh;
+}
+.logoText{
+  background-color: rgb(130, 1, 85);
+  width: 20vh;
+  padding: 1vh;
+  margin: 1vh;
+}
+
+/* Navbar */
+.navButton{
+  background-color: red;
+  color: white;
+  border: 0;
+  font-size: 3vh;
+  padding: 1vh;
+}
+
+.navButton:hover{
+  background-color: aliceblue;
+  color: black;
+}
+
+/* Hero */
+.heroContainer{
+  background-color: brown;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30vh;
+  margin: 1vh;
+}
+
+.heroLeft{
+  background-color: aquamarine;
+  width: 5%;
+}
+
+.heroRight{
+  background-color: rgb(255, 127, 229);
+  width: 5%;
+}
+
+.heroText{
+  background-color: transparent;
+  width: 90%;
+  padding: 1vh;
+}
+
+/* Welcome Message */
+.welcomeTitle{
+  background-color: rgb(150, 225, 133);
+  height: fit-content;
+  font-size: 5vw;
+  font-weight: bold;
+  padding: 1vh;
+  margin: .5vh;
+}
+
+/* Blurb */
+.welcomeBlurb{
+  background-color: rgb(228, 151, 213);
+  height: 30vh;
+  height: fit-content;
+  font-size: 2vw;
+  padding: 1vh;
+  margin: .5vh;
+}
+
+/* Cards */
+.cardsContainer{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(113, 68, 8);
+  width: 100%;
+}
+
+.cardContainer{
+  background-color: antiquewhite;
+  width: fit-content;
+  padding: 1vh;
+  margin: .5vh;
+}
+
+.cardThumbnail{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-color: deeppink;
+  width: 100%;
+}
+
+.cardDescriptor{
+  background-color: rgb(105, 137, 75);
+  width: 100%;
+  text-align: center;
+}
+
