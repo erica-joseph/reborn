@@ -37,6 +37,8 @@ body{
   padding: 1vh;
 }
 .bumperContainer{
+  display: flex;
+  flex-direction: column;
   background-color: yellow;
   width: 100%;
   height: 20vh;
@@ -95,17 +97,19 @@ body{
   flex-direction: row;
   width: 100%;
   height: 30vh;
-  margin: 1vh;
+
 }
 
 .heroLeft{
   background-color: aquamarine;
   width: 5%;
+  margin: auto;
 }
 
 .heroRight{
   background-color: rgb(255, 127, 229);
   width: 5%;
+  margin: auto;
 }
 
 .heroText{

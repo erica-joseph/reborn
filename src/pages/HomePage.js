@@ -42,9 +42,7 @@ function HomePage() {
   };
 
   const openRight = () => {
-    
     setIndex((prevIndex) => (prevIndex + 1) % hero.length);
-    
   };
 
 
@@ -99,10 +97,13 @@ function HomePage() {
         </div>
     </div>
     <div className = "bumperContainer">
-        
+        <h3>Resources</h3>
+        <a href=""> Contact Us </a>
+        <a href=""> FAQs </a>
+        <a href=""> Book an Appointment </a>
     </div>
     <div className = "rightsContainer">
-        
+        <center> <i>All Rights Reserved © 2025</i> </center>
     </div>
 
     </>
