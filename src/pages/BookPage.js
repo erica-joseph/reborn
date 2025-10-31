@@ -1,9 +1,13 @@
 import logo from '../logo.svg';
+import * as React from "react";
 import { useState, useEffect, useRef } from 'react';
 import { Routes, Route } from "react-router-dom";
 import { Link, useNavigate } from "react-router-dom";
+import DatePicker from "react-datepicker";
 import emailjs from '@emailjs/browser';
+import { InlineWidget } from "react-calendly";
 import '../style/style.css';
+import "react-datepicker/dist/react-datepicker.css";
 
 function BookPage() {
     const navigate = useNavigate();
@@ -15,6 +19,25 @@ function BookPage() {
   }
 
   const form = useRef();
+
+  const [startDate, setDate] = React.useState(new Date)
+  const [rangeStart, setRangeStart] = React.useState(new Date)
+  const defaultEndDate = new Date()
+  defaultEndDate.setDate(defaultEndDate.getDate() + 7)
+  const [rangeEnd, setRangeEnd] = React.useState(defaultEndDate)
+  const today = new Date()
+
+  const selectDateHandler = (d) => {
+    setDate(d)
+  }
+
+  const selectStartDate = d => {
+    setRangeStart(d)
+  }
+
+  const selectEndDate = d => {
+    setRangeEnd(d)
+  }
 
   function processText(input) {
     console.log("Sending text:", input);
@@ -67,18 +90,7 @@ function BookPage() {
 
     <div className = "contentContainer">
         <div className='bookingFormContainer'>
-          <form ref={form}  onSubmit={sendEmail}>
-            <input type="hidden" name="contact_number" />
-            <label>Name</label>
-            <input type="text" name="from_name" id="from_name"/>
-            <label>Email</label>
-            <input type="email" name="from_email" />
-            <label>Subject</label>
-            <input type="text" name="subject" />
-            <label>Message</label>
-            <textarea name="html_message" />
-            <input type="submit" value="Send" />
-          </form>
+        <InlineWidget url="https://calendly.com/sseulmoo/30min" styles={{ height: "800px" }} />
         </div>
     </div>
 

@@ -216,11 +216,11 @@ body{
   width: fit-content;
   margin: .5vh;
   border-radius: 10px;
-  border: .5px solid #eeeeee;
+  border: 1px solid #eeeeee;
 }
 
 .cardContainer:hover{
-  border: 1px solid #eeeeee;
+  border: 1px solid #d7d7d7;
 }
 
 .cardThumbnail{
@@ -252,5 +252,63 @@ body{
 
 /* Booking From */
 .bookingFormContainer{
-  background-color: red;
+  background-color: transparent;
+  overflow: visible;
+}
+
+
+/* Services Leaves */
+.leavesContainer{
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+}
+
+.leafContainer{
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  padding: 1vh;
+  margin: 1vh;
+  border-radius: 10px;
+  border: 1px solid #eeeeee;
+}
+
+.leafThumbnail{
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 25vh;
+  width: 25vh;
+  padding: 1vh;
+  border-radius: 10px 0 0 10px;
+}
+
+.leafDescriptionContainer{
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  height: 25vh;
+  padding: 1vh;
+  border-radius: 0 10px 10px 0;
+}
+
+.leafTitle{
+  background-color: transparent;
+  font-size: 5vh;
+  font-weight: bold;
+  padding: 1vh;
+}
+
+.leafDescription{
+  background-color: transparent;
+  padding: 1vh;
 }

@@ -18,48 +18,13 @@ function ServicePage() {
 
     const mainRef = useRef(null);
 
-    const cards = [
-        {id: 1, img: cardOne, descriptor: "This is a thing"},
-        {id: 2, img: cardTwo, descriptor: "This is a thing too"}
+    const leaves = [
+        {id: 1, img: cardOne, title: "boom", description: "This is a thing"},
+        {id: 2, img: cardTwo, title: "boomY", description: "This is a thing too"}
     ];
-
-    const hero = [
-        {id: 1, img: heroOne, text: "Reborn Indpendent Living"},
-        {id: 2, img: heroTwo, text: "Your care comes first"},
-        {id: 2, img: heroThree, text: "Reclaim your life"}
-    ];
-
 
  const [index, setIndex] = useState(0);
-
-  const openLeft = () => {
-    console.log(index);
-    if(index > 0){
-    setIndex((prevIndex) => (prevIndex - 1) % hero.length);
-    }
-    else if(index == 0){
-        setIndex((hero.length)-1);
-    }
-  };
-
-  const openRight = () => {
-    setIndex((prevIndex) => (prevIndex + 1) % hero.length);
-  };
-
-useEffect(() => {
-    const curr = mainRef.current;
-    if (!curr) return;
-    curr.style.backgroundImage = `url(${hero[index].img})`;
-    curr.style.animation = "none";
-    void curr.offsetWidth;
-    curr.style.animation = "heroFade";
-    curr.style.animationDuration = "8s";
-    curr.style.animationDirection = "forwards";
-    const timeout = setTimeout(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % hero.length);
-    }, 8000);
-    return () => clearTimeout(timeout);
-  }, [index, hero]); 
+ 
 
   return (
     
@@ -85,9 +50,26 @@ useEffect(() => {
         <button className = "navButton" onClick={() => navigate("/about")}>About</button>
     </div>
     <div className="partition" style = {{border: 0}}></div>
+
     <div className = "contentContainer">
-        
+        <div className='leavesContainer'>
+          {leaves.map((leaf, index) => (
+          <div className='leafContainer'>
+            <div className='leafThumbnail' style = {{backgroundImage: `url('${leaf.img}`}}>
+            </div>
+            <div className='leafDescriptionContainer'>
+              <div className='leafTitle'>
+                {leaf.title}
+              </div>
+              <di className = 'leafDescription'>
+                {leaf.description}
+              </di>
+            </div>    
+          </div>
+        ))}
+        </div>
     </div>
+
     <div className="partition"></div>
     <div className = "bumperContainer">
         <h3>Resources</h3>
