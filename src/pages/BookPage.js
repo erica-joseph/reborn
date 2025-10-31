@@ -2,25 +2,44 @@ import logo from '../logo.svg';
 import { useState, useEffect, useRef } from 'react';
 import { Routes, Route } from "react-router-dom";
 import { Link, useNavigate } from "react-router-dom";
+import emailjs from '@emailjs/browser';
 import '../style/style.css';
-
-//Images for cards
-import cardOne from '../style/cardOne.jpg';
-import cardTwo from '../style/cardTwo.jpg';
-
-//Images for Hero
-import heroOne from '../style/heroOne.jpg';
-import heroTwo from '../style/heroTwo.jpg';
-import heroThree from '../style/heroThree.jpg';
 
 function BookPage() {
     const navigate = useNavigate();
+    const [text, setText] = useState("");
 
-    function formSubmission(){
+  function handleSubmit(e) {
+    e.preventDefault(); // Prevents page refresh
+    processText(text);  // Send to your function
+  }
 
-    }
+  const form = useRef();
+
+  function processText(input) {
+    console.log("Sending text:", input);
+    // You can do whatever you want here — API call, display, etc.
+  }
     
+  function sendEmail(e) {
+    e.preventDefault(); // This is important, i'm not sure why, but the email won't send without it
 
+    emailjs
+
+      .sendForm('sseulmoo@gmail.com', 'template_st958vg', form.current, {
+        publicKey: '7jQlZnhX5YXbGZ_Fb',
+      })
+
+      .then(
+        (result) => {
+          alert('Email sent!');
+           // This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
   return (
     
     /*
@@ -48,11 +67,17 @@ function BookPage() {
 
     <div className = "contentContainer">
         <div className='bookingFormContainer'>
-          <form>
-            <label>Enter your name:
-              <input id = "name" type="text" />
-            </label>
-            <input type="submit" value="Submit" onClick = {formSubmission}/>
+          <form ref={form}  onSubmit={sendEmail}>
+            <input type="hidden" name="contact_number" />
+            <label>Name</label>
+            <input type="text" name="from_name" id="from_name"/>
+            <label>Email</label>
+            <input type="email" name="from_email" />
+            <label>Subject</label>
+            <input type="text" name="subject" />
+            <label>Message</label>
+            <textarea name="html_message" />
+            <input type="submit" value="Send" />
           </form>
         </div>
     </div>
