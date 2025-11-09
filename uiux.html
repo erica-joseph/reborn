@@ -1,0 +1,139 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Erica Joseph</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="resources/images/Logo_Personal_001_White.png">
+</head>
+<style>
+* {
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+.rows {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columnss that sits next to each other */
+.columns {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.columns img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two columns-layout instead of four columnss */
+@media screen and (max-width: 800px) {
+  .columns {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columnss stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columns {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+<body>
+<h1>UI/UX</h1>
+
+<!-- repeat module -->
+<h3>Hermes</h3>
+<!-- Photo Grid -->
+
+<!-- Container for the entire element of the project in UI/UX; will be repeated -->
+<div class = "uiuxContainer" >
+  <!-- Contains the gallery content used for the UI/UX; Will have horizontal overflow -->
+  <div class = "galleryContainer" id = "scrollBox">
+    <div class = "imagesContainer">
+      <img class = galleryImages src="https://imgur.com/7bYo6oM.png">
+      <img class = galleryImages src="https://imgur.com/N3VFNfv.png">
+  </div>
+  </div>
+  <!-- description for the project's gallery; keep wrapped, and later decide how overflow is handled -->
+  <div class = "descriptionContainer">
+    Description of things 
+  </div>
+</div>
+
+<!-- repeat module -->
+<h3>Obento</h3>
+<!-- Photo Grid -->
+
+<!-- Container for the entire element of the project in UI/UX; will be repeated -->
+<div class = "uiuxContainer" >
+  <!-- Contains the gallery content used for the UI/UX; Will have horizontal overflow -->
+  <div class = "galleryContainer" id = "scrollBox">
+    <div class = "imagesContainer">
+      <img class = galleryImages src="https://64.media.tumblr.com/343ed378227ba1430f1b31a8c4045ae7/b55514505366dc57-c6/s1280x1920/57deec3c7c030b192c6ae0224611269265b8f657.png">
+      <img class = galleryImages src="https://64.media.tumblr.com/f68d518c5459e2e3130efc71fdcefb41/b55514505366dc57-bc/s1280x1920/bb9eabd5ded0eac9f16eb348a5f81735886cf6b9.png">
+      </div>
+  </div>
+  <!-- description for the project's gallery; keep wrapped, and later decide how overflow is handled -->
+  <div class = "descriptionContainer">
+    Description of things 
+  </div>
+</div>
+
+<!-- repeat module -->
+<h3>Tuesday</h3>
+<!-- Photo Grid -->
+
+<!-- Container for the entire element of the project in UI/UX; will be repeated -->
+<div class = "uiuxContainer" >
+  <!-- Contains the gallery content used for the UI/UX; Will have horizontal overflow -->
+  <div class = "galleryContainer" id = "scrollBox">
+    <div class = "imagesContainer">
+      <img class = galleryImages src="https://64.media.tumblr.com/38433fe482ad923b8de377b74542943b/0424456f108ebe21-df/s1280x1920/fc77eea94e5ba86d226e8a4307b38abbca27ab37.png">
+      <img class = galleryImages src="https://64.media.tumblr.com/5659676d598bf73d8881074b2e0d39a4/0424456f108ebe21-af/s1280x1920/20d23e04402798387928d63606f7ec4f794206b6.png">
+      <img class = galleryImages src="https://64.media.tumblr.com/9c25255357f4127fd9516a06142915f5/0424456f108ebe21-6d/s1280x1920/64748aaa284f2691e9bfd73068b2b4e83c78622f.png">
+  </div>
+  </div>
+  <!-- description for the project's gallery; keep wrapped, and later decide how overflow is handled -->
+  <div class = "descriptionContainer">
+    Description of things 
+  </div>
+</div>
+
+<!-- don't touch! -->
+</div>
+<div class="bottombumper">  </div>
+</body>
+
+<script>
+const scrollBox = document.getElementById('scrollBox');
+
+scrollBox.addEventListener('mousemove', (e) => {
+  const bounds = scrollBox.getBoundingClientRect();
+  const mouseX = e.clientX - bounds.left;
+  const width = bounds.width;
+
+  const percent = mouseX / width; // from 0 to 1
+  const scrollWidth = scrollBox.scrollWidth - scrollBox.clientWidth;
+
+  scrollBox.scrollLeft = scrollWidth * percent;
+});
+
+</script>
+</html>

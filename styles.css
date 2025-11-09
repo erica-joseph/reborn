@@ -1,0 +1,313 @@
+* {
+  box-sizing: border-box;
+  overflow: clip
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: #00bdff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  height:100%;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 2;
+}
+
+/*Sidebar holds all of the navigation*/
+.sidebar {
+  align-items: center;
+  color: white;
+  float: left;
+  width: 17vw;
+  height: 100vh;
+  padding: 10px;
+  background-color: black;
+  margin: auto;
+    -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.sidebarcontainer {
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+.hbar{
+  background-color: black;
+  display: flex;
+  align-items: center;
+     -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  overflow: scroll;
+}
+.profile {
+    width: 7vw;
+    height: 7vw;
+    padding: 10px;
+    border-radius: 100px;
+    display: flex;
+    background-color: transparent;
+    background-size: cover;
+    background-image: url(https://imgur.com/rC0reDa.png);
+    margin: auto;
+    user-select: none;
+}
+.miniprofile {
+  width: 100%;
+  display: flex;
+    margin-left: 1vw;
+    margin-top: 2vh;  
+    padding-bottom: 2vw;
+    border-bottom: solid black .01vw;
+}
+.words{
+    background-color: transparent;
+    color: black;
+    display: inline-block;
+    margin: auto;
+    width: 70vw;
+    margin-left: 2vw;
+}
+.minititle{
+  font-size: 3vw;
+  font-weight: bold;
+}
+.minisub{
+  font-size: 2vw;
+}
+.hprofile {
+  width: 3vw;
+  height: 3vw;
+  padding: 10px;
+  border-radius: 100px;
+  display: flex;
+  background-color: transparent;
+  background-size: cover;
+  background-image: url('https://imgur.com/rC0reDa.png');
+  margin: auto;
+  float: left;
+}
+/*Holds the page's informations*/
+.container {
+  float: right;
+  width: 80vw;
+  height: 100vh;
+  padding: 10px;
+  background-color: white;
+}
+/*Actual page content*/
+.content {
+  float: left;
+  width: 100%;
+  height: 95vh;
+  padding: 10px;
+  background-color: transparent;
+}
+.logo {
+  width: 7vw;
+  height: 7vw;
+  padding: 10px;
+  display: flex;
+  justify-content: center; /* center horizontally */
+  background-color: transparent;
+  margin: auto;
+}
+.hlogo {
+  width: 3vw;
+  height: 3vw;
+  display: flex;
+  justify-content: center; /* center horizontally */
+  background-color: transparent;
+  margin: auto;
+  float: left;
+}
+.bumper {
+  width: 1vw;
+  height: 1vw;
+  padding: 10px;
+  display: flex;
+  background-color: transparent;
+  margin: auto;
+}
+
+.bottombumper {
+  width: 100%;
+  height: 10vh;
+  padding: 10px;
+  display: flex;
+  background-color: transparent;
+  margin: auto;
+}
+.name {
+  width: 10vw;
+  font-size: 1vw;
+  padding: 10px;
+  background-color: transparent;
+  margin: auto;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+}
+
+.line {
+  width: 70%;
+  height: .5px;
+  background-color: white;
+  display: flex;
+  margin: auto;
+}
+
+.nav {
+  width: 10vw;
+  height: 1vw;
+  padding: 10px;
+  display: flex;
+  background-color: transparent;
+  margin: auto;
+}
+
+.navbutton {
+  width: 10vw;
+  padding: 1vh;
+  background-color: transparent;
+  margin: auto;
+  text-align: center;
+}
+
+.hnavbutton {
+  padding: 1vh;
+  background-color: black;
+  text-align: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.btn{
+  font-size: .7vw;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  border: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.hbtn{
+  font-size: 1.5vh;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  border: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.btnline {
+  width: 0%;
+  height: 1px;
+  position: center;
+  opacity: 0.6;
+  transform-origin: center;
+  margin: auto;
+}
+
+.btn:hover + .btnline {
+  animation-name: example;
+  animation-duration: .5s;
+  opacity: 1;
+  animation-fill-mode: forwards; 
+}
+
+.hbtnline {
+  width: 0%;
+  height: 1px;
+  position: center;
+  opacity: 0.6;
+  transform-origin: center;
+  margin: auto;
+}
+
+.hbtn:hover + .btnline {
+  animation-name: example;
+  animation-duration: .5s;
+  opacity: 1;
+  animation-fill-mode: forwards; 
+}
+@keyframes example {
+  0%   {background-color: white; width: 0%;}
+  100% {background-color: white; width: 50%;}
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+/* Elements for  UI/UX Section */
+.uiuxContainer{
+  background-color: transparent;
+  overflow: hidden;
+  border-bottom: #d7d7d7 solid .01vw;
+  padding: 15px;
+}
+.galleryContainer{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: transparent;
+    /* height: 20vw; */
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+}
+  
+.descriptionContainer{
+  background-color: transparent;
+  width: auto;
+}
+.imagesContainer{
+  display: inline-flex;
+  overflow-x: scroll;
+  flex-direction: row;
+}
+.galleryImages{
+  padding: .5vw;
+  display: flex;
+  height: 20vw;
+}

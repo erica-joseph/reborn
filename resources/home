@@ -1,0 +1,120 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<div class = "containers">
+<p>
+<h1>Erica Joseph</h1>		         							      
+Orlando, Florida | 
+https://www.linkedin.com/in/erica-joseph-93b3501b1
+</p>
+
+<hr>
+
+<p>
+<i>
+Computer Engineering student (B.S. '25) with hands-on experience in embedded systems, hardware/software co-design, and full stack development. Passionate about real-time systems, cloud integration, and simulation tools. Seeking internship or entry-level opportunities in embedded systems, IoT, or application development.
+</i>
+</p>
+
+<!-- education -->
+<p>
+<h2>
+Education
+</h2>
+
+<h3>
+Bachelor of Science in Computer Engineering (BSCpE)
+</h3>
+
+<i>University of Central Florida</i> - Expected 2025
+</p>
+
+<p>
+Relevant Skills from Coursework: 
+</p>
+
+<p>
+<ul>
+  <li>Object Oriented Programming, Data Structures and Algorithms, Discrete Applications, Computer Organization & Architecture, Full Stack Application Development </li>
+  <li>Embedded Systems, Linear Circuits, Digital Systems, Electric Machinery, Linear Control Systems, PCB (Printed Circuit Board) Design, Electronic Design Automation (EDA)</li>
+</ul>
+</p>
+
+<!-- work -->
+<p>
+<h2>
+Work Experience
+</h2>
+
+<h3>
+Computer Science Intern
+</h3>
+
+<i>Siemens Energy</i> - Feb 2022 to Jan 2023
+</p>
+
+<p>
+Relevant Skills from Coursework: 
+</p>
+
+<p>
+<ul>
+  <li>CVE Data Scraping: Contributed to studies expanding on algorithmic patterns, improving computational models for future applications, including data scraping, aggregation and application development that saved the company over 10 million dollars. Application to dynamically gather information from open sources at a lower cost.</li>
+  <li>CVE Order Automation: Restructured cost value models, enhancing efficiency and saving the company around 4 million dollars. Project required extensive knowledge in Visual Basic.</li>
+</ul>
+</p>
+
+<!-- skills -->
+<p>
+<h2>
+Skills
+</h2>
+
+<p>
+<ul>
+  <li><b>Programming Languages:</b> Java, Python, C++, C, Verilog, MIPS, RTL, ModelSim, VivadoSynopsys VCS</li>
+  <li><b>Tools & Technologies:</b> Visual Basic, Microsoft Excel, PCB Fabrication, Microcontroller Development, MongoDB, Microsoft Azure, Amazon Web Services, Agile/Scrum, RTOS, Embedded Systems, Git</li>
+  <li><b>Concepts: </b> Software Design Patterns, API Integration, Simulation Development, Real-Time Systems</li>
+</ul>
+</p>
+
+<!-- projects -->
+<p>
+<h2>
+Projects
+</h2>
+
+<h3>
+Hermes: Real-Time Data Acquisition Module for BESS-BMS (2024 - 2025)
+</h3>
+</p>
+
+<p>
+Hermes is a module designed to facilitate real-time data delivery from a BESS-BMS: 
+</p>
+
+<p>
+<ul>
+  <li>Data Simulator developed through PySide to generate data that stands in for a BESS-BMS. Users were able to customize input that influenced the power generation and distribution.</li>
+  <li>A grid of ESP32 development boards were configured for 4 way communication to pass on data, as well as process it by calculating averages.</li>
+  <li>Cloud configured to gather the data and generate a KPI report.</li>
+</ul>
+</p>
+
+<!-- organizations -->
+<p>
+<h2>
+Organizations
+</h2>
+
+<p>
+<ul>
+  <li>Association for Computing Machinery (2024)</li>
+  <li>Women in Electrical Engineering and Computer Science (2024)</li>
+</ul>
+</p>
+</div>
+</body>
+</html>

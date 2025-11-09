@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.image {
+  background-color: transparent;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+   border-bottom:1px solid black;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+<h1> Projects </h1>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Hermes</h2>
+      <h5>UCF | Senior Design - <i>May, 2025</i></h5>
+      <p>Hermes is a module designed to facilitate real-time data delivery from a BESS-BMS. It implements a multi-computer grid configuration to process, analyze, compress, and transmit data to a dedicated cloud element. The project consists of three major components: the data simulator, the edge-based data acquisition (eDAQ) matrix, and the cloud element. The data simulator generates predictive data from a BESS-BMS to anticipate system behavior. The eDAQ matrix enables data sampling, analysis, and transmission between its nodes to ensure efficiency. The cloud element leverages architectures that integrate seamlessly with modern industry standards.</p>
+      <p>Skills used: </p>
+      <p>•    C programming when configuring the ESP32 development boards.</p>
+      <p>•    Python programming when building the main data application; used OOP extensively.</p>
+      <p>•    PySide/PyQT while building the graphical user interface.</p>
+      <p><i><a href="https://drive.google.com/file/d/1QGFWM-8CS6bdBOJYdDsZfPe2NkEjnTkK/view?usp=sharing" target="_blank">Conference Paper</a></i></p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Personal Website</h2>
+      <h5>Personal | Erica Joseph - <i>May, 2025</i></h5>
+      <p>For a more approachable representation of my education, work and personality I created a website hosted on Github Pages. The website serves as a hub for all topics related to my journey so far, as well as some of my next steps. The website includes an "About Me" page as the landing. It also includes a resume page that houses the online version of my resume. Projects houses some of the notable work I've done in both school and work. Interests includes a touch of my own personality, as I have a deep interest in visual design. The site concludes with my Contact Page, which includes important links such as my LinkedIn. This was my first time using Github pages. I bought the domain and latched it to the website, hoping for a cleaner user experience.</p>
+      <p>Skills used: </p>
+      <p>•    HTML/CSS for building the interface.</p>
+      <p>•    JavaScript for the more robust aspects of the UX.</p>
+      <p>•    Adobe Illustrator to design the logo and site prototype.</p>
+      <p><i><a href="https://github.com/erica-joseph/erica-joseph" target="_blank">Repository</a></i></p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Quine-McCluskey</h2>
+      <h5>UCF | Computer Aided Design for VLSI - <i>November, 2024</i></h5>
+     A routine project with the challenge to implement a Quine-McCluskey (QM) model. QM is an automation technique that allows for logic synthesis at a large scale. This project helped helped develop understanding of the topic of logic basis. The Quine-McCluskey algorithm is a method used in digital logic design to minimize Boolean expressions systematically by eliminating redundant terms through a tabular approach. While, by hand, it is the simpler process to understand it does require quite a bit of organization in terms of the boolean values. Even a simple process could lead to several pages of digit elimination between the numbers. While programming lowered the stress of keeping track of the values, keeping track of the logic was a bit of a challenge. Some techniques that allowed for certain outcomes would be detrimental to other configurations such as the differences between pla and bliff inputs. </p>
+      <p>Skills used: </p>
+      <p>•    Java programming for the computation.</p>
+      <p>•    Logic Design in relation to the bit combinations.</p>
+      <p><i><a href ="https://github.com/erica-joseph/Quine-McCluskey" target="_blank"> Repository </a></i></p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Obento</h2>
+      <h5>UCF | Object Oriented Programming - <i>2021</i></h5>
+      <p>Obento was an early project that revolved around building an inventory. This app is designed to manage and organize an inventory list, allowing users to add, edit, search, delete, save, and load item entries with specific formatting rules and export options.</p>
+      <p>Skills used: </p>
+      <p>•    Java programming for the computational methods.</p>
+      <p>•    JavaFX for the graphical user interface.</p>
+      <p>•    OOP for the modularity and class inheritance. </p>
+      <p>•    GIMP for the prototype and logo designs. </p>
+      <p><i><a href ="https://github.com/erica-joseph/Obento" target="_blank">Repository</a></i></p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Tuesday</h2>
+      <h5>UCF | Object Oriented Programming - <i>2021</i></h5>
+      <p>Tuesday was the first application made. It was a to-do list application written in Java. It allowed for users to add items to their to-do list, then check the items off. While it was a simple application, it granted quite a bit of education in the application building process.</p>
+      <p>Skills used: </p>
+      <p>•    Java programming for the computational methods.</p>
+      <p>•    JavaFX for the graphical user interface.</p>
+      <p>•    OOP for the modularity and class inheritance. </p>
+      <p>•    GIMP for the prototype and logo designs. </p>
+      <p><i><a href ="https://github.com/erica-joseph/Tuesday" target="_blank">Repository</a></i></p>
+    </div>
+  </div>
+</div>
+<div class="bottombumper">  </div>
+</body>
+</html>
