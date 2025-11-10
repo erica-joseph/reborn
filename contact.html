@@ -118,7 +118,7 @@
   <br>
   <textarea name="message" placeholder="Your Message" required class = "formInput" style = "width: 60%; height: 30vh;" id = "inputText"></textarea>
   <br>
-  <button class = "submitButton" type="submit">Send</button>
+  <button class = "submitButton" type="submit" id = "send">Send</button>
 </form>
 
     <center><p id="status"></p></center>
@@ -175,6 +175,7 @@ if (contactForm) {
   const inputName = document.getElementById('inputName');
   const inputText = document.getElementById('inputText');
   const inputEmail = document.getElementById('inputEmail');
+  const send = document.getElementById('send');
   const contactForm = document.getElementById('contact-form');
   const container = document.getElementById('container');
   const content = document.getElementById('content');
@@ -188,6 +189,7 @@ if (contactForm) {
     inputEmail.style.fontSize = "1vw";
     inputText.style.fontSize = "1vw";
     contactForm.style.fontSize = "1vw";
+    send.style.fontSize = "1.5vw";
   } else if (aspect <= 1.5) {
     landscape.style.display = 'none';
     portrait.style.display = 'flex';
@@ -198,6 +200,7 @@ if (contactForm) {
     inputEmail.style.fontSize = "3vw";
     inputText.style.fontSize = "3vw";
     contactForm.style.fontSize = "3vw";
+    send.style.fontSize = "3.5vw";
   } 
 }
 
