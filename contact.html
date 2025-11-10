@@ -144,7 +144,7 @@
   <script>
 
 // Initialize EmailJS
-emailjs.init("7jQlZnhX5YXbGZ_Fb");
+emailjs.init("v2gW77klotIXEm3Ne");
 
 // Attach submit handler to the contact form
 const contactForm = document.getElementById('contact-form');
@@ -153,7 +153,7 @@ if (contactForm) {
     e.preventDefault(); // prevent page reload
     console.log("Contact form submit triggered");
 
-    emailjs.sendForm('service_03gzv2i', 'template_st958vg', contactForm)
+    emailjs.sendForm('service_l5mo66q', 'service_l5mo66q', contactForm)
       .then(() => {
         document.getElementById('status').innerText =
           "Thank you for your message! A representative will be in contact with you soon.";
