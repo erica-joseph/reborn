@@ -32,7 +32,7 @@ body {
   height: 100vh;
   padding: 10px;
   background-color: rgb(255, 255, 255);
-  background-image: linear-gradient(to bottom, lightblue, #eee);
+  background-image: linear-gradient(to bottom, #263e51, #547b9b);
   margin: auto;
     -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
@@ -461,6 +461,11 @@ table, th, td {
   align-items: center;
 }
 
+.contactForm{
+  display: flex;
+  justify-content: center;
+}
+
 .contactTitle{
   font-weight: bold;
   padding: 1vh;
@@ -475,4 +480,52 @@ table, th, td {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.formTable{
+  font-size: 2vw;
+  display: flex;
+  justify-content: center;
+}
+
+.formTable td{
+  width: 20vw;
+  font-size: 1vw;
+}
+
+.formInput{
+  font-size: 1vw;
+  padding: .5vw 0 0 .5vw;
+}
+
+.contact-form{
+  width: 100%;
+  font-size: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputBox{
+  display: flex;
+  flex-direction: row;
+  padding: 0 1vw 0 1vw;
+}
+
+#portraitElement {
+  display: none;
+}
+
+.submitButton{
+  background-color: #263e51;
+  color: white;
+  border: 1px solid white;
+  border-radius: 1vw;
+  padding: 1vw;
+}
+
+.submitButton:hover{
+  background-color: white;
+  color: #263e51;
+  border: 1px solid #263e51;
 }
