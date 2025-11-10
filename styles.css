@@ -51,8 +51,7 @@ body {
   -ms-user-select: none; 
   user-select: none; 
   overflow: scroll;
-  
-  background-image: linear-gradient(to bottom, lightblue, #eee);
+  background-image: linear-gradient(to bottom, #263e51, #547b9b);
 }
 .profile {
     width: 7vw;
